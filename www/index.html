@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UA Web Challenge 2015</title>
+</head>
+<body>
+	<div id="main">
+		<h2>UA Web Challenge 2015</h2>
+		<span class="author">Created By: Mykhailo Tsiuptsiun</span>
+
+		<div class="form-group">
+			<label for="homeURL">URL</label>
+			<input
+				id="homeURL"
+				name="url"
+				type="url"
+				class="form-control"
+				placeholder="http://uawebchallenge.com/"
+			>
+		</div>
+
+		<div class="form-group">
+			<label for="levels">Level</label>
+			<input
+				value="2"
+				min="0"
+				max="100"
+				type="number"
+				class="form-control"
+				id="levels"
+				placeholder="Level"
+			>
+		</div>
+
+		<button id="MakeSitemap" type="submit" class="btn btn-success">Make Sitemap</button>
+
+		<table class="table stats">
+				<tr>
+					<td>Root URL</td>
+					<td id="rootURL"></td>
+				</tr>
+				<tr>
+					<td>Max Level</td>
+					<td id="maxLevel"></td>
+				</tr>
+				<tr>
+					<td>Found URLs</td>
+					<td id="foundURLs"></td>
+				</tr>
+				<tr>
+					<td>Scan Queue</td>
+					<td id="scanQueue"></td>
+				</tr>
+				<tr>
+					<td>Check Last-Modified Queue</td>
+					<td id="lastModifyQueue"></td>
+				</tr>
+				<tr>
+					<td>Complete</td>
+					<td id="done"></td>
+				</tr>
+		</table>
+
+		<a id="result" class="btn btn-success" target="_blank" href="#">Sitemap</a>
+	</div>
+
+	<link rel="stylesheet" href="media/main.css"></link>
+	<script src="media/jquery.min.js"></script>
+	<script src="media/main.js"></script>
+	<link rel="stylesheet" href="media/bootstrap/css/bootstrap.min.css">
+	<script src="media/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

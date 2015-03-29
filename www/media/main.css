@@ -1,0 +1,20 @@
+#main {
+	width: 650px;
+	margin: 0 auto;
+	position: relative;
+}
+#result{
+	display: none;
+}
+.author{
+	float:right;
+	color: #A3A3A3;
+  line-height: 30px;
+  position: absolute;
+  right: 0px;
+  top:3px;
+}
+.stats{
+	margin-top: 20px;
+	display: none;
+}
